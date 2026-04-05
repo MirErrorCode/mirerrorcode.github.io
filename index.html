@@ -45,13 +45,12 @@
       opacity: 0.9;
     }
 
-    .links {
-      margin-top: 24px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+  .links {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
 
     .links a {
       text-decoration: none;
@@ -67,6 +66,38 @@
       background: rgba(255,255,255,0.15);
       transform: translateY(-2px);
     }
+    .top-link {
+  margin-bottom: 16px;
+}
+
+.apps {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.apps a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.3);
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.apps a img {
+  width: 18px;
+  height: 18px;
+}
+
+.apps a:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
   </style>
 </head>
 <body>
@@ -80,11 +111,29 @@
 
     <p style="margin-top:16px;">📩 mirerrorcode@email.com</p>
 
-    <div class="links">
-      <a href="https://github.com/MirErrorCode" target="_blank">GitHub</a>
-      <a href="https://play.google.com/store/apps/details?id=com.mirlink.watercore" target="_blank">Watercore</a>
-      <a href="https://play.google.com/store/apps/details?id=com.mirlink.habitlabs" target="_blank">HabitLabs</a>
-    </div>
+<div class="links">
+
+  <!-- GitHub сверху -->
+  <div class="top-link">
+    <a href="https://github.com/MirErrorCode" target="_blank">
+      🐙 GitHub
+    </a>
+  </div>
+
+  <!-- Приложения снизу -->
+  <div class="apps">
+    <a href="https://play.google.com/store/apps/details?id=com.mirlink.watercore" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="app" />
+      Watercore
+    </a>
+
+    <a href="https://play.google.com/store/apps/details?id=com.mirlink.habitlabs" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="app" />
+      HabitLabs
+    </a>
+  </div>
+
+</div>
   </div>
 
 </body>
